@@ -9,6 +9,16 @@
             div.static{
                 position: static;
             }
+            /* Responsive CSS for the header image */
+                @media (max-width: 768px) {
+                    .header-image {
+                        float: none; /* Remove float for mobile */
+                        margin: 0 auto; /* Center the image horizontally */
+                        width: 80%; /* Adjust the image width as needed for mobile */
+                        max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+                        display: block; /* Remove float */
+                    }
+                }
 
             
             
@@ -199,7 +209,7 @@
             
             <title>Vasudhaiva Kutumbakam</title>
             
-            <img src="Transperent bg.png" alt="vasudhaiva Kutumbakam" width="auto" height="auto" /> 
+            <img src="Transperent bg.png" alt="vasudhaiva Kutumbakam" width="auto" height="auto" class="header-image">
             <div class="title">
             <!---<h1>Vasudhaiva Kutumbakam<br><h2>(For a Better World)</h2></h1>--->
             </div>
